@@ -1,6 +1,6 @@
-Ansible Role: Docker setup
+Ansible Role: Docker telegraf
 =========
-A simple role to run [telegraf](https://www.influxdata.com/time-series-platform/telegraf/) in a docker containers. 
+A simple role to run [telegraf](https://www.influxdata.com/time-series-platform/telegraf/) in a docker container. 
 The container will be in a dedicated  Docker Bridge network, to keep the service isolated.
 The role has been tested on Rasperry Pi only, but it should work on any other Linux machine.
 
@@ -8,7 +8,8 @@ Requirements
 ------------
 
 Docker must be installed and running on the target hosts. Docker can be installed using the [docker_setup role](https://github.com/ellolo/ansible-docker_setup). 
-InfluxDB must be installed and running on a host in order to push logs to it. InfluxDB can be installed as a docker container using the [docker_influxdb_grafan rolea](https://github.com/ellolo/ansible-docker_influxdb_grafana). 
+
+InfluxDB must be installed and running on a host in order to push logs to it. InfluxDB can be installed as a docker container using the [docker_influxdb_grafana role](https://github.com/ellolo/ansible-docker_influxdb_grafana). 
 
 Role Variables
 --------------
